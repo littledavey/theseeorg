@@ -1,0 +1,30 @@
+# Jekyll
+   _site/
+   .sass-cache/
+   .jekyll-cache/
+   .jekyll-metadata
+
+   # Ruby
+   .bundle/
+   vendor/
+
+   # Node
+   node_modules/
+
+   # macOS
+   .DS_Store
+
+   # Windows
+   Thumbs.db
+   ehthumbs.db
+
+   # Temporary files
+   *.swp
+   *~
+
+   # IDE specific files
+   .vscode/
+   .idea/
+   *.sublime-project
+   *.sublime-workspace
+   
