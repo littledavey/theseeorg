@@ -453,75 +453,100 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     name="wf-form-file-upload"
                     data-name="file-upload"
                     id="wf-form-file-upload"
-                    class="form_form"
-                  >
-                    <div data-form="step" class="form_step">
-                      <div class="form_field-wrapper">
-                        <label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label>
-                        <input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" required>
+                    <div class="form">
+                      <div class="container is-hero">
+                        <div class="hero_content">
+                          <div class="card_img">
+                            <img id="is-davey" loading="lazy" alt="Xenu's spacecraft as looking exactly like DC-8s without fans" src="images/DouglasDC8_small.avif" class="is-mail">
+                          </div>
+                          <div class="hero_p-wrap">
+                            <div class="container">
+                              <div class="spacer-large"></div>
+                              <h1 class="heading-style-h2">Send in your submissions!</h1>
+                              <div class="spacer-small"></div>
+                              <p>
+                                <br>Although this is a competition, we encourage you all to have fun whilst doing this and remember, lets keep the focus on bringing awareness to ending the Church of Scientology for good! Remember, do not trespass or endanger yourself or others!
+                              </p>
+                            </div>
+                            <div class="container-small">
+                              <div class="spacer-large"></div>
+                              <div class="form_component w-form">
+                                <form 
+                                  action="https://formspree.io/f/xjkvgver"
+                                  method="POST"
+                                  enctype="multipart/form-data"
+                                  name="wf-form-file-upload"
+                                  data-name="file-upload"
+                                  id="wf-form-file-upload"
+                                  class="form_form"
+                                >
+                                  <div data-form="step" class="form_step">
+                                    <div class="form_field-wrapper">
+                                      <label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label>
+                                      <input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" required style="color: #ff007a;">
+                                    </div>
+                    
+                                    <div class="form_field-wrapper">
+                                      <label for="email" class="form-label">YOUR EMAIL</label>
+                                      <input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="email" id="email" required style="color: #ff007a;">
+                                    </div>
+                    
+                                    <div class="form_field-wrapper">
+                                      <label for="Org_location-2" class="form-label">ORG LOCATION</label>
+                                      <input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org Location" placeholder="Org Location" type="text" id="Org_location-2" required style="color: #ff007a;">
+                                    </div>
+                    
+                                    <div class="form_field-wrapper">
+                                      <label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label>
+                                      <select id="Style-Select-2" name="category" data-name="Style Select 2" required class="form_input is-select-input w-select" style="color: #ff007a;">
+                                        <option value="">Select one...</option>
+                                        <option value="World's Tiniest Org">World's Tiniest Org</option>
+                                        <option value="World's Rundown Org">World's Rundown Org</option>
+                                        <option value="World's Emptiest Org">World's Emptiest Org</option>
+                                      </select>
+                                    </div>
+                    
+                                    <div class="form_field-wrapper">
+                                      <label for="permission">Do we have permission to upload to our Instagram page [<a href="https://www.instagram.com/theseeorgs/?hl=en" target="_blank" class="text-span">FOLLOW THIS LINK</a>] and credit you <span class="text-span-4">(the username you gave, not the email, which will be kept private)</span>?</label>
+                                      <label class="w-checkbox form_checkbox">
+                                        <input type="checkbox" name="permission" id="permission" value="Yes" required>
+                                        <span class="form_checkbox-label w-form-label">Click for Yes</span>
+                                      </label>
+                                    </div>
+                    
+                                    <div class="form_field-wrapper">
+                                      <label for="file-upload" class="form-label">File UPLOAD</label>
+                                      <input class="form_input w-input" name="file" type="file" id="file-upload" accept="image/*" required style="color: #ff007a;">
+                                    </div>
+                    
+                                    <!-- User-friendly message about reCAPTCHA -->
+                                    <div class="form_field-wrapper">
+                                      <p class="form-notice u-text-small" style="color: #ffffff; font-weight: bold; font-size: 0.9em; margin: 15px 0;">
+                                        Note: After clicking submit, you'll be taken to Google's quick security check (reCAPTCHA) to verify you're human. This helps protect our submission system.
+                                      </p>
+                                    </div>
+                                  </div>
+                    
+                                  <div class="spacer-medium"></div>
+                                  <div class="button-group">
+                                    <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
+                                  </div>
+                                </form>
+                                <div class="form_message-success w-form-done">
+                                  <div>Thank you! Your submission has been received!</div>
+                                </div>
+                                <div class="form_message-error w-form-fail">
+                                  <div>Oops! Something went wrong while submitting the form.</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="big-thetan_img is-0"><img id="is-davey" loading="lazy" alt="Proud body thetan, resisting Scientology" src="images/thetan-2_1thetan-2.avif" class="is-home-tethan is-3"></div>
+                          <div class="big-thetan_img is-form2"><img id="is-davey" loading="lazy" alt="mad scientoology body thetan because he was expeled from his body by scientology" src="images/thetan-3_1thetan-3.avif" class="is-home-tethan is-form"></div>
+                          <div class="big-thetan_img is-1"><img id="is-davey" loading="lazy" alt="Awesome body tehan, single, looking for a body to have some fun" src="images/thetan-1_1thetan-1.avif" class="is-home-tethan is-form"></div>
+                        </div>
                       </div>
-      
-                      <div class="form_field-wrapper">
-                        <label for="email" class="form-label">YOUR EMAIL</label>
-                        <input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="email" id="email" required>
-                      </div>
-      
-                      <div class="form_field-wrapper">
-                        <label for="Org_location-2" class="form-label">ORG LOCATION</label>
-                        <input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org Location" placeholder="Org Location" type="text" id="Org_location-2" required>
-                      </div>
-      
-                      <div class="form_field-wrapper">
-                        <label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label>
-                        <select id="Style-Select-2" name="category" data-name="Style Select 2" required class="form_input is-select-input w-select">
-                          <option value="">Select one...</option>
-                          <option value="World's Tiniest Org">World's Tiniest Org</option>
-                          <option value="World's Rundown Org">World's Rundown Org</option>
-                          <option value="World's Emptiest Org">World's Emptiest Org</option>
-                        </select>
-                      </div>
-      
-                      <div class="form_field-wrapper">
-                        <label for="permission">Do we have permission to upload to our Instagram page [<a href="#"><span class="text-span">FOLLOW THIS LINK</span></a>] and credit you <span class="text-span-4">(the username you gave, not the email, which will be kept private)</span>?</label>
-                        <label class="w-checkbox form_checkbox">
-                          <input type="checkbox" name="permission" id="permission" value="Yes" required>
-                          <span class="form_checkbox-label w-form-label">Click for Yes</span>
-                        </label>
-                      </div>
-      
-                      <div class="form_field-wrapper">
-                        <label for="file-upload" class="form-label">File UPLOAD</label>
-                        <input class="form_input w-input" name="file" type="file" id="file-upload" accept="image/*" required>
-                      </div>
-      
-                      <!-- User-friendly message about reCAPTCHA -->
-                      <div class="form_field-wrapper">
-                        <p class="form-notice u-text-small" style="color: #666; font-size: 0.9em; margin: 15px 0;">
-                          Note: After clicking submit, you'll be taken to Google's quick security check (reCAPTCHA) to verify you're human. This helps protect our submission system.
-                        </p>
-                      </div>
-                    </div>
-      
-                    <div class="spacer-medium"></div>
-                    <div class="button-group">
-                      <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
-                    </div>
-                  </form>
-                  <div class="form_message-success w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div class="form_message-error w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-thetan_img is-0"><img id="is-davey" loading="lazy" alt="Proud body thetan, resisting Scientology" src="images/thetan-2_1thetan-2.avif" class="is-home-tethan is-3"></div>
-            <div class="big-thetan_img is-form2"><img id="is-davey" loading="lazy" alt="mad scientoology body thetan because he was expeled from his body by scientology" src="images/thetan-3_1thetan-3.avif" class="is-home-tethan is-form"></div>
-            <div class="big-thetan_img is-1"><img id="is-davey" loading="lazy" alt="Awesome body tehan, single, looking for a body to have some fun" src="images/thetan-1_1thetan-1.avif" class="is-home-tethan is-form"></div>
-          </div>
-        </div>
-      </div>      
+                    </div>                    
     </main>
     <div class="footer_wrapper">
       <div class="spacer"></div>
