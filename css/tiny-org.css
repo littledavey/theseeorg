@@ -772,6 +772,10 @@ blockquote {
   font-weight: 500;
 }
 
+.form_input::placeholder, .form_input.is-select-input {
+  color: var(--orange);
+}
+
 .form_message-error {
   margin-top: .75rem;
   padding: .75rem;
