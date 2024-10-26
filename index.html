@@ -429,73 +429,125 @@ window.addEventListener("DOMContentLoaded", (event) => {
         </div>
       </div>
       <div class="container-small">
-        <div class="container-small">
-          <form
-            action="https://formspree.io/f/xjkvgver"
-            method="POST"
-            enctype="multipart/form-data"
-            name="wf-form-file-upload"
-            data-name="file-upload"
-            id="wf-form-file-upload"
-            class="form_form"
-          >
-            <div data-form="step" class="form_step">
-              <div class="form_field-wrapper">
-                <label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label>
-                <input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" required>
-              </div>
-        
-              <div class="form_field-wrapper">
-                <label for="email" class="form-label">YOUR EMAIL</label>
-                <input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="email" id="email" required>
-              </div>
-        
-              <div class="form_field-wrapper">
-                <label for="Org_location-2" class="form-label">ORG LOCATION</label>
-                <input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org Location" placeholder="Org Location" type="text" id="Org_location-2" required>
-              </div>
-        
-              <div class="form_field-wrapper">
-                <label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label>
-                <select id="Style-Select-2" name="category" data-name="Style Select 2" required class="form_input is-select-input w-select">
-                  <option value="">Select one...</option>
-                  <option value="World's Tiniest Org">World's Tiniest Org</option>
-                  <option value="World's Rundown Org">World's Rundown Org</option>
-                  <option value="World's Emptiest Org">World's Emptiest Org</option>
-                </select>
-              </div>
-        
-              <div class="form_field-wrapper">
-                <label for="permission" class="form-label">Do we have permission to upload to our Instagram page?</label>
-                <input type="checkbox" name="permission" id="permission" value="Yes" required>
-                <span class="form_checkbox-label">Click for Yes</span>
-              </div>
-        
-              <div class="form_field-wrapper">
-                <label for="file-upload" class="form-label">File UPLOAD</label>
-                <input class="form_input w-input" name="file" type="file" id="file-upload" accept="image/*" required>
-              </div>
-        
-              <!-- Add the reCAPTCHA widget -->
-              <div class="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX" data-sitekey="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX"></div>
-        
-              <div class="button-group">
-                <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
-              </div>
+        <form
+          action="https://formspree.io/f/xjkvgver"
+          method="POST"
+          enctype="multipart/form-data"
+          name="wf-form-file-upload"
+          data-name="file-upload"
+          id="wf-form-file-upload"
+          class="form_form"
+        >
+          <div data-form="step" class="form_step">
+            <div class="form_field-wrapper">
+              <label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label>
+              <input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" required>
             </div>
-          </form>
-        
-          <!-- Success and Error Messages -->
-          <div class="form_message-success w-form-done">
-            <div>Thank you! Your submission has been received!</div>
+      
+            <div class="form_field-wrapper">
+              <label for="email" class="form-label">YOUR EMAIL</label>
+              <input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="email" id="email" required>
+            </div>
+      
+            <div class="form_field-wrapper">
+              <label for="Org_location-2" class="form-label">ORG LOCATION</label>
+              <input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org Location" placeholder="Org Location" type="text" id="Org_location-2" required>
+            </div>
+      
+            <div class="form_field-wrapper">
+              <label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label>
+              <select id="Style-Select-2" name="category" data-name="Style Select 2" required class="form_input is-select-input w-select">
+                <option value="">Select one...</option>
+                <option value="World's Tiniest Org">World's Tiniest Org</option>
+                <option value="World's Rundown Org">World's Rundown Org</option>
+                <option value="World's Emptiest Org">World's Emptiest Org</option>
+              </select>
+            </div>
+      
+            <div class="form_field-wrapper">
+              <label for="permission" class="form-label">Do we have permission to upload to our Instagram page?</label>
+              <input type="checkbox" name="permission" id="permission" value="Yes" required>
+              <span class="form_checkbox-label">Click for Yes</span>
+            </div>
+      
+            <div class="form_field-wrapper">
+              <label for="file-upload" class="form-label">File UPLOAD</label>
+              <input class="form_input w-input" name="file" type="file" id="file-upload" accept="image/*" required>
+            </div>
+      
+            <!-- Add the reCAPTCHA widget -->
+            <div class="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX" data-sitekey="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX"></div>
+      
+            <div class="button-group">
+              <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
+            </div>
           </div>
-          <div class="form_message-error w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+        </form>
+      
+        <!-- Success and Error Messages -->
+        <div class="form_message-success w-form-done">
+          <div>Thank you! Your submission has been received!</div>
         </div>
-        
-        <!-- Add reCAPTCHA script -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <div class="form_message-error w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      
+      <!-- Add reCAPTCHA script -->
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      
+      <!-- Add Formspree's AJAX library -->
+      <script src="https://formspree.io/js/formspree-v2.js"></script>
+      
+      <script>
+        window.onload = function() {
+          const form = document.getElementById('wf-form-file-upload');
+          
+          form.onsubmit = function(e) {
+            e.preventDefault();
+            
+            // Verify reCAPTCHA
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+              alert('Please complete the reCAPTCHA');
+              return;
+            }
+      
+            // Create FormData object to handle file uploads
+            const formData = new FormData(form);
+            
+            // Add reCAPTCHA response
+            formData.append('g-recaptcha-response', recaptchaResponse);
+      
+            // Submit to Formspree using their AJAX library
+            fetch('https://formspree.io/f/xjkvgver', {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.ok) {
+                // Show success message
+                document.querySelector('.form_message-success').style.display = 'block';
+                document.querySelector('.form_message-error').style.display = 'none';
+                // Reset form and reCAPTCHA
+                form.reset();
+                grecaptcha.reset();
+              } else {
+                throw new Error('Form submission failed');
+              }
+            })
+            .catch(error => {
+              // Show error message
+              document.querySelector('.form_message-error').style.display = 'block';
+              document.querySelector('.form_message-success').style.display = 'none';
+            });
+          };
+        };
+      </script>
     </main>
     <div class="footer_wrapper">
       <div class="spacer"></div>
