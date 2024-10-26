@@ -312,7 +312,7 @@ blockquote {
 
 .card_img {
   flex: none;
-  width: 16vw;
+  width: 42vw;
   max-width: 100%;
   position: relative;
 }
@@ -340,12 +340,12 @@ blockquote {
 
 .big-thetan_img.is-0 {
   width: 19vw;
-  inset: 6% 0% auto auto;
+  inset: -7% 0% auto auto;
 }
 
 .big-thetan_img.is-1 {
   width: 13vw;
-  inset: 13% 3% 0% auto;
+  inset: -73% 3% 0% auto;
 }
 
 .big-thetan_img.is-form2 {
@@ -772,6 +772,10 @@ blockquote {
   font-weight: 500;
 }
 
+.form_input::placeholder, .form_input.is-select-input {
+  color: var(--orange);
+}
+
 .form_message-error {
   margin-top: .75rem;
   padding: .75rem;
@@ -874,6 +878,7 @@ blockquote {
 }
 
 .is-mail {
+  width: 39vw;
   position: relative;
   transform: translate(0, 16px);
 }
@@ -1364,6 +1369,10 @@ blockquote {
     height: 8vw;
     font-size: 3vw;
     line-height: 1;
+  }
+
+  .is-mail {
+    width: 54vw;
   }
 
   .marquee-text_component {
