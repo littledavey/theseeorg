@@ -442,32 +442,70 @@ window.addEventListener("DOMContentLoaded", (event) => {
               <div class="container-small">
                 <div class="spacer-large"></div>
                 <div class="form_component w-form">
-                  <form method="post" data-form="multistep" data-ms-form="profile" name="wf-form-file-upload" data-name="file-upload" id="wf-form-file-upload" class="form_form" data-wf-page-id="6717bd2a8f6fed5e0c214c4d" data-wf-element-id="b2a048f6-3595-34ce-bd8c-2326882d9f0b">
-                    <div data-form="step" class="form_step">
-                      <div class="form_field-wrapper"><label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label><input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" data-ms-member="" required=""></div>
-                      <div class="form_field-wrapper"><label for="email" class="form-label">YOUR EMAIL</label><input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="text" id="email" data-ms-member="" required=""></div>
-                      <div class="form_field-wrapper"><label for="Org_location-2" class="form-label">ORG LOCATION</label><input class="form_input w-input" maxlength="256" name="Org_location-2" data-name="Org Location 2" placeholder="Org Location" type="text" id="Org_location-2" data-ms-member="" required=""></div>
-                      <div class="form_field-wrapper"><label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label><select id="Style-Select-2" name="Style-Select-2" data-name="Style Select 2" required="" data-ms-member="" class="form_input is-select-input w-select">
-                          <option value="">Select one...</option>
-                          <option value="First">World’s Tiniest Org</option>
-                          <option value="Second">World’s Rundown Org</option>
-                          <option value="Third">World’s Emptiest Org</option>
-                        </select></div>
-                      <div class="form_field-wrapper"><label for="email-2">Do we have permission to upload to our instagram page [<a href="#"><span class="text-span">FOLLOW THIS LINK</span></a>]  and credit you <span class="text-span-4">(the username you gave, not the email, which will be kept private)</span>?</label><label class="w-checkbox form_checkbox">
-                          <div class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon w--redirected-checked"></div><input type="checkbox" name="Checkbox-2" id="Checkbox-2" data-name="Checkbox 2" data-ms-member="" style="opacity:0;position:absolute;z-index:-1" checked=""><span for="Checkbox-2" class="form_checkbox-label w-form-label">Click for Yes</span>
-                        </label></div>
-                      <div class="form_field-wrapper"><label for="file-upload" class="form-label">File UPLOAD</label><input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org_location" placeholder="Upload your file" type="text" id="file-upload" data-ms-member="" required=""></div>
+                  <form
+                  action="https://formspree.io/f/xjkvgver"
+                  method="POST"
+                  enctype="multipart/form-data"
+                  name="wf-form-file-upload"
+                  data-name="file-upload"
+                  id="wf-form-file-upload"
+                  class="form_form"
+                >
+                  <div data-form="step" class="form_step">
+                    <div class="form_field-wrapper">
+                      <label for="Handle-2" class="form-label">Name or Handle (as long as the email is correct, you can get creative!)</label>
+                      <input class="form_input w-input" maxlength="256" name="Handle" data-name="Handle" placeholder="Name or Handle" type="text" id="Handle-2" required>
                     </div>
-                    <div class="spacer-medium"></div>
-                    <div class="button-group"><input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit"></div>
-                  </form>
-                  <div class="form_message-success w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
+                
+                    <div class="form_field-wrapper">
+                      <label for="email" class="form-label">YOUR EMAIL</label>
+                      <input class="form_input w-input" maxlength="256" name="email" data-name="email" placeholder="Email" type="email" id="email" required>
+                    </div>
+                
+                    <div class="form_field-wrapper">
+                      <label for="Org_location-2" class="form-label">ORG LOCATION</label>
+                      <input class="form_input w-input" maxlength="256" name="Org_location" data-name="Org Location" placeholder="Org Location" type="text" id="Org_location-2" required>
+                    </div>
+                
+                    <div class="form_field-wrapper">
+                      <label for="Style-Select-2" class="form-label">CHOOSE FROM ONE OF THE CATEGORIES BELOW!</label>
+                      <select id="Style-Select-2" name="category" data-name="Style Select 2" required class="form_input is-select-input w-select">
+                        <option value="">Select one...</option>
+                        <option value="World’s Tiniest Org">World’s Tiniest Org</option>
+                        <option value="World’s Rundown Org">World’s Rundown Org</option>
+                        <option value="World’s Emptiest Org">World’s Emptiest Org</option>
+                      </select>
+                    </div>
+                
+                    <div class="form_field-wrapper">
+                      <label for="permission" class="form-label">Do we have permission to upload to our Instagram page?</label>
+                      <input type="checkbox" name="permission" id="permission" value="Yes" required>
+                      <span class="form_checkbox-label">Click for Yes</span>
+                    </div>
+                
+                    <div class="form_field-wrapper">
+                      <label for="file-upload" class="form-label">File UPLOAD</label>
+                      <input class="form_input w-input" name="file" type="file" id="file-upload" accept="image/*" required>
+                    </div>
+                
+                    <!-- Add the reCAPTCHA widget -->
+                    <div class="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX" data-sitekey="6LcCt2wqAAAAAED65NteLGQ9UakR5BBfL96JO9V1"></div>
+                
+                    <div class="button-group">
+                      <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
+                    </div>
                   </div>
-                  <div class="form_message-error w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                </form>
+                
+                <!-- Success and Error Messages -->
+                <div class="form_message-success w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
                 </div>
+                <div class="form_message-error w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+                
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
               </div>
             </div>
             <div class="big-thetan_img is-0"><img id="is-davey" loading="lazy" alt="Proud body thetan, resisting Scientology" src="images/thetan-2_1thetan-2.avif" class="is-home-tethan is-3"></div>
