@@ -428,74 +428,104 @@ window.addEventListener("DOMContentLoaded", (event) => {
           </div>
         </div>
       </div>
-      <form
-      action="https://formspree.io/f/xjkvgver"
-      method="POST"
-      enctype="multipart/form-data"
-      class="form_form"
-    >
-      <div class="form_field-wrapper">
-        <label for="Handle-2">Name or Handle</label>
-        <input type="text" name="Handle" id="Handle-2" class="form_input w-input" required>
-      </div>
-    
-      <div class="form_field-wrapper">
-        <label for="email">Your Email</label>
-        <input type="email" name="email" id="email" class="form_input w-input" required>
-      </div>
-    
-      <div class="form_field-wrapper">
-        <label for="Org_location">Org Location</label>
-        <input type="text" name="Org_location" id="Org_location" class="form_input w-input" required>
-      </div>
-    
-      <div class="form_field-wrapper">
-        <label for="category">Choose a Category</label>
-        <select name="category" id="category" class="form_input w-select" required>
-          <option value="">Select one...</option>
-          <option value="World’s Tiniest Org">World’s Tiniest Org</option>
-          <option value="World’s Rundown Org">World’s Rundown Org</option>
-          <option value="World’s Emptiest Org">World’s Emptiest Org</option>
-        </select>
-      </div>
-    
-      <div class="form_field-wrapper">
-        <label for="permission">Do we have permission to upload to our Instagram page?</label>
-        <input type="checkbox" name="permission" id="permission" class="form_input w-input" required>
-        <span>Click for Yes</span>
-      </div>
-    
-      <div class="form_field-wrapper">
-        <label for="file-upload">File Upload</label>
-        <input type="file" name="file" id="file-upload" accept="image/*" class="form_input w-input" required>
-      </div>
-    
-      <!-- Add the reCAPTCHA widget -->
-      <div class="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX" data-sitekey="6LcCt2wqAAAAAED65NteLGQ9UakR5BBfL96JO9V1"></div>
-    
-      <button type="submit" class="submit-button w-button">Submit</button>
-    </form>
-    
-    <!-- Include the Google reCAPTCHA script -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
-    <div class="form_message-success w-form-done">
-      <div>Thank you! Your submission has been received!</div>
-    </div>
-    <div class="form_message-error w-form-fail">
-      <div>Oops! Something went wrong while submitting the form.</div>
-    </div>
-                
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                
+      <div class="form">
+        <div class="container is-hero">
+          <div class="hero_content">
+            <div class="card_img"><img id="is-davey" loading="lazy" alt="Xenu&#x27;s spacecraft as looking exactly like DC-8s without &quot;fans&quot;" src="images/DouglasDC8_small.avif" class="is-mail"></div>
+            <div class="hero_p-wrap">
+              <div class="container">
+                <div class="spacer-large"></div>
+                <h1 class="heading-style-h2">Send in your submissions!</h1>
+                <div class="spacer-small"></div>
+                <p><br>Although this is a competition, we encourage you all to have fun whilst doing this and remember, lets keep the focus on bringing awareness to ending the Church of Scientology for good! Remember, do not trespass or endanger yourself or others!</p>
               </div>
-            </div>
-            <div class="big-thetan_img is-0"><img id="is-davey" loading="lazy" alt="Proud body thetan, resisting Scientology" src="images/thetan-2_1thetan-2.avif" class="is-home-tethan is-3"></div>
-            <div class="big-thetan_img is-form2"><img id="is-davey" loading="lazy" alt="mad scientoology body thetan because he was expeled from his body by scientology" src="images/thetan-3_1thetan-3.avif" class="is-home-tethan is-form"></div>
-            <div class="big-thetan_img is-1"><img id="is-davey" loading="lazy" alt="Awesome body tehan, single, looking for a body to have some fun" src="images/thetan-1_1thetan-1.avif" class="is-home-tethan is-form"></div>
-          </div>
-        </div>
-      </div>
+              <div class="container-small">
+                <div class="spacer-large"></div>
+                <div class="form_component w-form">
+                  <div class="form">
+                    <div class="container is-hero">
+                      <div class="hero_content">
+                        <div class="card_img">
+                          <img id="is-davey" loading="lazy" alt="Xenu's spacecraft as looking exactly like DC-8s without 'fans'" src="images/DouglasDC8_small.avif" class="is-mail">
+                        </div>
+                        <div class="hero_p-wrap">
+                          <div class="container">
+                            <div class="spacer-large"></div>
+                            <h1 class="heading-style-h2">Send in your submissions!</h1>
+                            <div class="spacer-small"></div>
+                            <p><br>Although this is a competition, we encourage you all to have fun whilst doing this and remember, let's keep the focus on bringing awareness to ending the Church of Scientology for good! Remember, do not trespass or endanger yourself or others!</p>
+                          </div>
+                          <div class="container-small">
+                            <div class="spacer-large"></div>
+                            <div class="form_component w-form">
+                              <form
+                                action="https://formspree.io/f/xjkvgver"
+                                method="POST"
+                                enctype="multipart/form-data"
+                                name="wf-form-file-upload"
+                                id="wf-form-file-upload"
+                                class="form_form"
+                              >
+                                <div class="form_field-wrapper">
+                                  <label for="Handle-2">Name or Handle</label>
+                                  <input type="text" name="Handle" id="Handle-2" required class="form_input w-input">
+                                </div>
+                                
+                                <div class="form_field-wrapper">
+                                  <label for="email">Your Email</label>
+                                  <input type="email" name="email" id="email" required class="form_input w-input">
+                                </div>
+                                
+                                <div class="form_field-wrapper">
+                                  <label for="Org_location">Org Location</label>
+                                  <input type="text" name="Org_location" id="Org_location" required class="form_input w-input">
+                                </div>
+                                
+                                <div class="form_field-wrapper">
+                                  <label for="category">Choose a Category</label>
+                                  <select name="category" id="category" required class="form_input is-select-input w-select">
+                                    <option value="">Select one...</option>
+                                    <option value="World’s Tiniest Org">World’s Tiniest Org</option>
+                                    <option value="World’s Rundown Org">World’s Rundown Org</option>
+                                    <option value="World’s Emptiest Org">World’s Emptiest Org</option>
+                                  </select>
+                                </div>
+                                
+                                <div class="form_field-wrapper">
+                                  <label for="permission">Do we have permission to upload to our Instagram page?</label>
+                                  <input type="checkbox" name="permission" id="permission" required>
+                                  <span>Click for Yes</span>
+                                </div>
+                                
+                                <div class="form_field-wrapper">
+                                  <label for="file-upload">File Upload</label>
+                                  <input type="file" name="file" id="file-upload" accept="image/*" required class="form_input w-input">
+                                </div>
+                                
+                                <!-- Add the reCAPTCHA widget -->
+                                <div class="6LcCt2wqAAAAAE2ti_aHFvkJxEm9_lRZjEOCbKUX" data-sitekey="6LcCt2wqAAAAAED65NteLGQ9UakR5BBfL96JO9V1></div>
+                                
+                                <button type="submit" class="submit-button w-button">Submit</button>
+                              </form>
+                              
+                              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                              
+                            </div>
+                          </div>
+                          <div class="big-thetan_img is-0">
+                            <img id="is-davey" loading="lazy" alt="Proud body thetan, resisting Scientology" src="images/thetan-2_1thetan-2.avif" class="is-home-tethan is-3">
+                          </div>
+                          <div class="big-thetan_img is-form2">
+                            <img id="is-davey" loading="lazy" alt="mad scientology body thetan because he was expelled from his body by scientology" src="images/thetan-3_1thetan-3.avif" class="is-home-tethan is-form">
+                          </div>
+                          <div class="big-thetan_img is-1">
+                            <img id="is-davey" loading="lazy" alt="Awesome body thetan, single, looking for a body to have some fun" src="images/thetan-1_1thetan-1.avif" class="is-home-tethan is-form">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
     </main>
     <div class="footer_wrapper">
       <div class="spacer"></div>
