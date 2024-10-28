@@ -549,19 +549,29 @@ window.addEventListener("DOMContentLoaded", (event) => {
     tagName: "span"
   });
 
-    // Add this new section for immediate H1 animation
+  // New animation code with timeout
+  setTimeout(() => {
     const h1Element = document.querySelector(".h1[text-pop-up]");
-  if (h1Element) {
-    gsap.from(h1Element.querySelectorAll(".char"), {
-      scale: 0,
-      opacity: 0,
-      rotation: 90,
-      duration: 0.6,
-      ease: "back.out(2.5)",
-      stagger: { from: "end", amount: 0.5 }
-    });
-  }
-  
+    if (h1Element) {
+      // First ensure all characters are visible but at initial state
+      gsap.set(h1Element.querySelectorAll(".char"), {
+        scale: 0,
+        opacity: 0,
+        rotation: 90
+      });
+      
+      // Then animate them
+      gsap.to(h1Element.querySelectorAll(".char"), {
+        scale: 1,
+        opacity: 1,
+        rotation: 0,
+        duration: 0.7,
+        ease: "back.out(2.5)",
+        stagger: { from: "start", amount: 0.5 },
+        delay: 0.1 // Small delay to ensure everything is ready
+      });
+    }
+  }, 100);
   // Generic function to create ScrollTriggers for each animation
   function createScrollTrigger(triggerElement, timeline) {
     ScrollTrigger.create({
